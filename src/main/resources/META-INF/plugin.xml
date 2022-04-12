@@ -1,0 +1,44 @@
+<!-- Copyright 2000-2022 JetBrains s.r.o. and other contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file. -->
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+
+<idea-plugin>
+
+  <!-- Unique id for this plugin. Must stay constant for the life of the plugin. -->
+  <id>edu.gematria</id>
+
+  <!-- Text to display as name on Preferences/Settings | Plugin page -->
+  <name>Gematria</name>
+
+  <!-- Product and plugin compatibility requirements -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- Text to display as description on Preferences/Settings | Plugin page -->
+  <description>
+    <![CDATA[
+      Gematria. Requires at least project to be open, and a file open in the editor
+      to see the menu item this plugin adds to the editor popup menu.
+      TODO: More methods, see https://en.wikipedia.org/wiki/Gematria#Other_methods_in_Hebrew
+    ]]>
+  </description>
+  <change-notes>
+    <![CDATA[
+      <ul>
+        <li><b>0.9.3</b> poc.</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <!-- Text to display as company information on Preferences/Settings | Plugin page -->
+<!--  <vendor url="https://plugins.jetbrains.com">IntelliJ Platform SDK</vendor>-->
+
+  <actions>
+    <action id="EditorBasics.EditorIllustrationAction"
+            class="edu.gematria.EditorIllustrationAction"
+            text="Gematria"
+            description="Gematria Calc">
+<!--            icon="SdkIcons.Sdk_default_icon"-->
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
