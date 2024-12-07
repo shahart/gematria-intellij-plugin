@@ -1,15 +1,11 @@
 package edu.gematria;
 
-//import junit.framework.TestCase;
-import junit.framework.MyTestCase;
-//import org.apache.log4j.BasicConfigurator;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-public class CalcTest extends MyTestCase {
+public class CalcTest {
 
-    public static void main(String[] s) {
-        new MyTestCase(CalcTest.class).runTests();
-    }
-
+    @Test
     public void testCalc() {
         String str = "אבגדהוזחטי";
         assertEquals((1+10)*10/2, Calc.calc(str));
@@ -18,8 +14,5 @@ public class CalcTest extends MyTestCase {
         assertEquals((10+100)*10/2, Calc.calc(str));
     }
 
-    public void setUp() {
-//        BasicConfigurator.configure();
-    }
 
 }

@@ -2,3 +2,6 @@
 .gradle/
 build/
 dist/
+target/
+intellij/
+
