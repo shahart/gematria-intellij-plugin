@@ -10,4 +10,6 @@ See also https://en.wikipedia.org/wiki/Gematria#Other_methods_in_Hebrew
 
 Export the utility to a jar with `mvn deploy` to use git-wagon.
 
-Or, not test, via `mvn install:install-file -DgroupId=GROUP -DartifactId=ARTIFACT-NAME -Dversion=ARTIFACT-VERSION -Dfile=PATH-TO-THE-JAR -Dpackaging=jar -DlocalRepositoryPath=. -DcreateChecksum=true -DgeneratePom=true`
+Or (not tested) via `mvn install:install-file -DgroupId=GROUP -DartifactId=ARTIFACT-NAME -Dversion=ARTIFACT-VERSION -Dfile=PATH-TO-THE-JAR -Dpackaging=jar -DlocalRepositoryPath=. -DcreateChecksum=true -DgeneratePom=true`
+
+[![JavaCI](https://github.com/shahart/gematria-intellij-plugin/workflows/JavaCI/badge.svg)](https://github.com/shahart/gematria-intellij-plugin/actions)
