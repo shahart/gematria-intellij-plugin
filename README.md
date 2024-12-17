@@ -11,8 +11,9 @@ See also https://en.wikipedia.org/wiki/Gematria#Other_methods_in_Hebrew
 
 Install https://github.com/dkandalov/live-plugin
 
-import from Gist https://gist.github.com/shahart/e1182d7707631cac9ef06c4290db7aa3
+- Gematria - import from Gist https://gist.github.com/shahart/e1182d7707631cac9ef06c4290db7aa3
 
+- GithubRef - import from live-plugins/gitHubRef
 
 # Utility jar to be available via https://github.com/shahart/maven-repo #
 
