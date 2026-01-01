@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.gematria</groupId>
-    <artifactId>gematria</artifactId>
+    <artifactId>gematria-intellij-plugin</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <name>gematria</name>
@@ -61,8 +61,10 @@
 
     <distributionManagement>
         <repository>
-            <id>shahart-repo</id>
-            <url>git:releases://git@github.com:shahart/maven-repo.git</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/shahart/gematria-intellij-plugin</url>
+
         </repository>
     </distributionManagement>
 </project>
