@@ -15,10 +15,33 @@ Install https://github.com/dkandalov/live-plugin
 
 - GithubRef - import from live-plugins/gitHubRef
 
-# Utility jar to be available via https://github.com/shahart/maven-repo #
+# Utility jar to be available via some Artifactory repo
+
+## https://github.com/shahart/maven-repo ##
 
 Export the utility to a jar with `mvn deploy` to use git-wagon.
 
 Or (not tested) via `mvn install:install-file -DgroupId=GROUP -DartifactId=ARTIFACT-NAME -Dversion=ARTIFACT-VERSION -Dfile=PATH-TO-THE-JAR -Dpackaging=jar -DlocalRepositoryPath=. -DcreateChecksum=true -DgeneratePom=true`
 
+## github ##
+
+pom.xml
+
+    <dependencies>
+        <dependency>
+            <groupId>edu.gematria</groupId>
+            <artifactId>gematria-intellij-plugin</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+	
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/shahart/gematria-intellij-plugin</url>
+        </repository>
+    </distributionManagement>
+
 [![JavaCI](https://github.com/shahart/gematria-intellij-plugin/workflows/JavaCI/badge.svg)](https://github.com/shahart/gematria-intellij-plugin/actions)
+
