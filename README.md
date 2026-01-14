@@ -15,6 +15,10 @@ Install https://github.com/dkandalov/live-plugin
 
 - GithubRef - import from live-plugins/gitHubRef
 
+# Python
+
+python -m unittest calc
+
 # Utility jar to be available via some Artifactory repo
 
 ## https://github.com/shahart/maven-repo ##
